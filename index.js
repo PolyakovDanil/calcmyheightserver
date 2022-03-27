@@ -4,7 +4,6 @@ const app = express();
 const getTwoPoints = require('./parser/parser');
 app.use(express.json());
 app.post('/',  (req, res) =>{
-    res.header("Access-Control-Allow-Origin", "*");
 
     const cordArray = {w1: req.body.w1, d1: req.body.d1, w2: req.body.w2, d2: req.body.d2 };
 
